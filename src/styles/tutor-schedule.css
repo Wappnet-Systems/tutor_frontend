@@ -1,0 +1,138 @@
+.tutor-schedule .tu-themeform__wrap {
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.tutor-schedule .form-group-wrap {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tutor-schedule .tu-formarea {
+    margin-bottom: 30px;
+    width: 100%;
+    border-radius: 4px;
+    border: 1px solid #eeeeee;
+}
+
+.tutor-schedule .tu-formarea_title {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 16px 20px;
+    cursor: pointer;
+    flex-wrap: wrap;
+}
+
+.tutor-schedule .tu-formarea_title h5 {
+    font-weight: 600;
+    margin-bottom: 0;
+    color: #1C1C1C;
+}
+.tutor-schedule .tu-formarea_title::after {
+    color: #999999;
+    font-size: 20px;
+    content: "\e930";
+    line-height: 26px;
+    margin-left: auto;
+    font-family: "icomoon";
+}
+
+.tutor-schedule .tu-formarea_title[aria-expanded=true]::after {
+    transform: rotate(90deg);
+}
+.tutor-schedule .tu-formarea_content {
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 0 0 4px 4px;
+    border-top: 1px solid #eeeeee;
+}
+.tutor-schedule .tu-formarea_group {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -10px;
+    align-items: flex-end;
+}
+.tutor-schedule .form-group {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    width: 100%;
+    padding: 10px;
+    align-items: center;
+    margin-bottom: 0;
+}
+.tutor-schedule .tu-formarea_list {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin: -5px;
+    flex: auto;
+}
+
+.tutor-schedule .tu-formarea_list li {
+    width: 25%;
+    padding: 5px;
+    list-style: none;
+}
+
+.tutor-schedule .tu-formarea_list li a {
+    padding: 12px;
+    display: flex;
+    position: relative;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 4px;
+    background-color: #ffffff;
+    border: 1px solid #eeeeee;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease-in-out;
+}
+.tutor-schedule .tu-formarea_list li h5 {
+    margin: 0;
+}
+
+.tutor-schedule .tu-formarea_list li a h6 {
+    font-weight: 600;
+    margin-bottom: 0;
+    color: #1C1C1C;
+    transition: all 0.3s ease-in-out;
+}
+
+.tutor-schedule .tu-formarea_list li a span {
+    font-weight: 600;
+    color: #999999;
+    font: 400 0.875rem / 1.5714285714em "Outfit", sans-serif;
+}
+
+@media (max-width: 767px) {
+    .tutor-schedule .tu-formarea_list li{
+        width: 33.33%;
+    }
+    .tutor-schedule .tu-freelanceremptylist{
+        padding: 15px;
+    }
+    .tutor-schedule .tu-bookingwrapper{
+        padding: 15px;
+    }
+}
+@media (max-width: 575px){
+    .tutor-schedule .tu-formarea_list li {
+        width: 50%;
+    }
+}
+@media (max-width: 414px){
+    .tutor-schedule .tu-bookingwrapper {
+        padding: 0;
+    }
+}
+@media (max-width: 375px){
+    .tutor-schedule .tu-formarea_list li a{
+        padding: 6px;
+    }
+    .tutor-schedule .tu-freelanceremptylist {
+        padding: 6px;
+    }
+}
